@@ -95,8 +95,14 @@ quantized_image_16_levels = uniform_quantization(image, 16)
 quantized_image_64_levels = uniform_quantization(image, 64)
 
 relative_entropy(image, quantized_image_8_levels, "8 рівнів")
+print_image_entropy(quantized_image_8_levels, "8 рівнів:")
+
 relative_entropy(image, quantized_image_16_levels, "16 рівнів")
+print_image_entropy(quantized_image_16_levels, "16 рівнів:")
+
 relative_entropy(image, quantized_image_64_levels, "64 рівнів")
+print_image_entropy(quantized_image_64_levels, "64 рівнів:")
+
 
 quantized_step2_8_levels = uniform_quantization(step2, 8)
 quantized_step2_16_levels = uniform_quantization(step2, 16)
